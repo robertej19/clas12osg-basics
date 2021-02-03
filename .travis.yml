@@ -8,9 +8,9 @@ services:
 install:
 #  - if [[ $TRAVIS_PYTHON_VERSION == 2.7 ]]; then pip install -r req-py2.txt; fi
 # - pip install -r req-py2.txt; python_version == "2.7"
- - pip install -r requirements.txt
+ - pip install -r .travis_tests/requirements.txt
 # - pip install mysql-python
 # command to run tests
 
 #script: python2 testapp.py || python3 testapp.py #For now, can't get python3 to work properly
-script: python3 testapp.py
+script: python3 .travis_tests/travis_tests.py
