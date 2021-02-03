@@ -23,6 +23,7 @@ def user_validation(args):
   if username == 'gemc' or args.username != None:
     username = args.username
 
+  #The following is needed for running on the Virtual Machine produced by Travis-CI
   is_travis = 'TRAVIS' in os.environ
   if is_travis == True:
   	print("We're at travis-ci environment")
