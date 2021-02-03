@@ -12,7 +12,7 @@ files from online repositories, and inserts the inforamtion into the database.
 
 Please note the database must exist for this to work properly.
 If the database does not exist (while we are using SQLite): go
-to the server side code and generate the database. Consult the
+to common_tools and generate the database. Consult the
 most recent README for specific directions on accomplishing this.
 
 """
@@ -40,9 +40,7 @@ import filestructure as fs
 import user_validation
 
 
-
-
-# This project imports
+# This package imports
 import gcard_handler
 import gcard_selector
 import scard_handler
@@ -185,7 +183,7 @@ def setup_database(args):
 
     if args.lite:
         use_mysql = False
-        username, password = "none", "none"
+        username, password = "none", "none" #SQLite doesn't use passwords or usernames
         database_name = args.lite
     else:
         use_mysql = True
