@@ -14,10 +14,11 @@ import datetime
 # packaging and installing the utilities.
 import os
 import sys
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))+'/../../')
-import fs
 import sqlite3
 #import MySQLdb #commented out for testing on suBMIT
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))+'/../../')
+import filestructure as fs
 
 def connect_to_mysql(host, username, password, db_name):
   """Return a MySQL database connection. """
