@@ -6,8 +6,10 @@
 
 
 from __future__ import print_function
-import common_methods as utils
-import filestructure as fs
+
+from common_tools import common_methods as utils
+from common_tools import filestructure as fs
+
 
 def html_reader(url_dir,data_identifyier):
     # create a subclass and override the handler methods

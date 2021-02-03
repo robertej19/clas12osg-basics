@@ -12,8 +12,8 @@ import datetime
 from subprocess import PIPE, Popen
 import os
 
-import filestructure as fs
-import common_methods as utils
+from common_tools import filestructure as fs
+from common_tools import common_methods as utils
 
 def user_validation(args):
   #These next two lines are good but do not work on python < 2.7

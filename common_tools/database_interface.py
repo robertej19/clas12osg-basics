@@ -6,19 +6,20 @@ for the client side live in client/update_tables.py.
 
 """
 
-from __future__ import print_function
+from __future__ import print_function #Only needed for python2
 import datetime 
+
+import os
+import sys
+import sqlite3
+import MySQLdb 
 
 # Ensure that the client can locate utils.  Having to call sys
 # before this import breaks PEP8.  This will be fixed by
 # packaging and installing the utilities.
-import os
-import sys
-import sqlite3
-#import MySQLdb #commented out for testing on suBMIT
-
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))+'/../../')
-import filestructure as fs
+print("trying to import fs")
+sys.path.insert(1, os.path.dirname(os.path.abspath(__file__))+'/../../')
+from common_tools import filestructure as fs
 
 def connect_to_mysql(host, username, password, db_name):
   """Return a MySQL database connection. """
