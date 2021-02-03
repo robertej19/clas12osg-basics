@@ -7,10 +7,13 @@
 #****************************************************************
 from __future__ import print_function
 import sqlite3, time
-import utils, fs, argparse, socket, subprocess
+import argparse, socket, subprocess
 import datetime
 from subprocess import PIPE, Popen
 import os
+
+import filestructure as fs
+import common_methods as utils
 
 def user_validation(args):
   #These next two lines are good but do not work on python < 2.7

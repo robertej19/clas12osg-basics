@@ -9,7 +9,9 @@
 
 from __future__ import print_function
 import sqlite3, time
-import utils, fs
+
+import filestructure as fs
+import common_methods as utils
 
 class scard_class:
     def __init__(self,scard_text):

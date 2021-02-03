@@ -5,8 +5,11 @@
 #****************************************************************
 
 from __future__ import print_function
-import utils, fs
+
 import sqlite3, argparse
+
+import filestructure as fs
+import common_methods as utils
 
 def get_args():
   utils.printer2("Getting arguments from command line")
