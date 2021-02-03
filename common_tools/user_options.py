@@ -8,8 +8,8 @@ from __future__ import print_function
 
 import sqlite3, argparse
 
-from common_tools import filestructure as fs
-from common_tools import common_methods as utils
+import filestructure as fs
+import common_methods as utils
 
 def get_args():
   utils.printer2("Getting arguments from command line")

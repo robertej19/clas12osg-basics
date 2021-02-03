@@ -10,9 +10,9 @@ import sqlite3
 import sys
 
 #From local
-from common_tools import database_interface as database
-from common_tools import filestructure as fs
-from common_tools import user_options as get_args
+import database_interface as database
+import filestructure as fs
+import user_options as get_args
 
 def add_field(db, sql, tablename, field_name, field_type):
     strn = "ALTER TABLE {0} ADD COLUMN {1} {2}".format(

@@ -6,8 +6,8 @@
 # ****************************************************************
 
 from __future__ import print_function
-from common_tools import gcard_helper
-from common_tools import scard_helper
+import gcard_helper
+import scard_helper
 
 #(fs, gcard_helper, get_args, scard_helper,
 #                   user_validation, utils)

@@ -33,16 +33,14 @@ import sqlite3
 # Ensure that the client can locate utils.  Having to call sys
 # before this import breaks PEP8.  This will be fixed by
 # packaging and installing the utilities.
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))+'/../../')
-from common_tools import database_interface as database
-from common_tools import common_methods as utils
-from common_tools import filestructure as fs
-from common_tools import user_validation
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))+'/../../common_tools')
+print(sys.path)
+import database_interface as database
+import common_methods as utils
+import filestructure as fs
+import user_validation
 
 
-
-#, fs, gcard_helper, get_args,
-#                   scard_helper, user_validation, utils)
 
 
 # This project imports

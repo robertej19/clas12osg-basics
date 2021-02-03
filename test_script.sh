@@ -15,6 +15,8 @@ else
 fi
 
 mkdir database/
-python3 common_tools/create_database.py --lite=database/CLAS12OSG.db
-python3 client/src/SubMit.py --lite=database/CLAS12OSG.db -u=testuser client/scards/scard_type1.txt
-sqlite3 database/CLAS12OSG.db 'SELECT user,run_status,client_time FROM submissions;'
+cd common_tools/
+python3 create_database.py --lite=../database/CLAS12OSG.db
+cd ../client/
+python3 src/SubMit.py --lite=../database/CLAS12OSG.db -u=testuser scards/scard_type1.txt
+sqlite3 ../database/CLAS12OSG.db 'SELECT user,run_status,client_time FROM submissions;'

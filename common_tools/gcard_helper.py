@@ -23,9 +23,9 @@
 #***************************************************************
 from __future__ import print_function
 
-from common_tools import filestructure as fs
-from common_tools import common_methods as utils
-from common_tools import html_reader
+import filestructure as fs
+import common_methods as utils
+import html_reader
 
 def db_gcard_write(UserSubmissionID,timestamp,gcard_text):
     strn = "INSERT INTO Gcards(UserSubmissionID) VALUES ({0});".format(UserSubmissionID)

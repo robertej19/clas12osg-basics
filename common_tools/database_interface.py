@@ -18,8 +18,9 @@ import MySQLdb
 # before this import breaks PEP8.  This will be fixed by
 # packaging and installing the utilities.
 print("trying to import fs")
-sys.path.insert(1, os.path.dirname(os.path.abspath(__file__))+'/../../')
-from common_tools import filestructure as fs
+#sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))+'/../../')
+print(sys.path)
+import filestructure as fs
 
 def connect_to_mysql(host, username, password, db_name):
   """Return a MySQL database connection. """

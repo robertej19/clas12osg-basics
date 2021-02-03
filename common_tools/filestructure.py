@@ -23,7 +23,7 @@
 from __future__ import print_function
 import sqlite3, os, datetime
 
-from common_tools import gcard_helper
+import gcard_helper
 
 """*****************************************************************************
 ------------------------ Submission File Specifications ------------------------
