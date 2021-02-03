@@ -25,7 +25,7 @@ f.write(" ")
 f.close()
 
 #Remove SQLite file if exists (it shouldn't, but someone might have pushed it by accident)
-sqlite_filename = os.path.dirname(os.path.abspath(__file__))+'/common_tools/CLAS12OSG.db'
+sqlite_filename = os.path.dirname(os.path.abspath(__file__))+'/../common_tools/CLAS12OSG.db'
 if os.path.isfile(sqlite_filename):
 	print('removing previous sqlite database file')
 	subprocess.call(['rm',sqlite_filename])

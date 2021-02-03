@@ -39,8 +39,8 @@ def create_commands():
     #								'0')
 
     verify_submission_success_sqlite = command_class('Verify scard submission success',
-                                    ['sqlite3','utils/CLAS12OCR.db','SELECT user FROM submissions WHERE user_submission_id=1'],
-                                    'testuser\n')
+                                    ['sqlite3','common_tools/CLAS12OSG.db','SELECT user FROM submissions WHERE user_submission_id=1'],
+                                    b"testuser\n") #The b stands for byte
 
 
     #submit_server_jobs_test_db = command_class('Submit jobs from server on CLAS12TEST',
