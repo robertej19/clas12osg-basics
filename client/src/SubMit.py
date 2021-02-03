@@ -34,7 +34,6 @@ import sqlite3
 # before this import breaks PEP8.  This will be fixed by
 # packaging and installing the utilities.
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))+'/../../common_tools')
-print(sys.path)
 import database_interface as database
 import common_methods as utils
 import filestructure as fs
