@@ -15,9 +15,11 @@ import datetime
 import logging
 import sys
 import calendar
-import fs
+
 #import MySQLdb #commented out for testing on suBMIT
 import sqlite3
+
+import filestructure as fs
 
 def getPythonVersion():
     return sys.version_info[0] #element 0 is the major release, e.g. python 2 or python 3
